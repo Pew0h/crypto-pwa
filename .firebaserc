@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "esgi-projects"
+  },
+  "targets": {
+    "esgi-projects": {
+      "hosting": {
+        "angular-pwa": [
+          "esgi-projects"
+        ]
+      }
+    }
+  }
+}

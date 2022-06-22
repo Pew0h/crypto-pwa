@@ -1,0 +1,14 @@
+.card:hover{
+  transform: scale(1.1);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+pagination-controls /deep/ .ngx-pagination{
+  margin-bottom: 5px !important;
+}
+
+pagination-controls /deep/ .ngx-pagination .current {
+  background: #5e72e4 !important;
+}
+

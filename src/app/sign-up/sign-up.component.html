@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+    S'inscrire
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+</head>
+
+<body class="">
+<main class="main-content  mt-0">
+  <section>
+    <div class="page-header min-vh-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-start">
+                <h4 class="font-weight-bolder">S'inscrire</h4>
+                <p class="mb-0">Entrez votre email and votre mot de passe</p>
+              </div>
+              <div class="card-body">
+                <form [formGroup]="formSignUp" (submit)="submit()" method="POST" role="form">
+                  <div class="mb-3">
+                    <input type="email" class="form-control form-control-lg" placeholder="Email" formControlName="email" name="email" email="true">
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Pseudo" formControlName="pseudo" name="pseudo">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control form-control-lg" placeholder="Mot de passe" formControlName="password" name="password" minlength="6">
+                  </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control form-control-lg" placeholder="Confirmez votre mot de passe" formControlName="password2" name="password2" minlength="6">
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-1 mb-0">S'inscrire</button>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                <p class="mb-4 text-sm mx-auto">
+                  Vous avez déjà un compte?
+                  <a routerLink="/sign-in" routerLinkActive="active" class="text-primary text-gradient font-weight-bold">Se connecter</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+            <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center overflow-hidden" style="background-image: url('https://images.hdqwalls.com/download/ethereum-x-dragon-ball-5k-ia-1920x1080.jpg');
+          background-size: cover;">
+              <span class="mask bg-gradient-primary opacity-6"></span>
+              <h4 class="mt-5 text-white font-weight-bolder position-relative">"Bitcoin est le TCP/IP de l’argent"</h4>
+              <p class="text-white position-relative">Paul Buchheit - Ingénieur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+
+</html>
+<router-outlet></router-outlet>
+
