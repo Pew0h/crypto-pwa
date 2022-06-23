@@ -40,7 +40,7 @@ export class SignUpComponent implements OnInit {
           this.toastr.error('Email déjà utilisé');
           return;
         }
-        this.router.navigate(['sign-in']).then(() => window.location.reload());
+        this.router.navigate(['sign-in']);
       });
     } else {
       if(this.f.password.value.length < 6 || this.f.password2.value.length < 6){
